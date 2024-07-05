@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+
+.infos-bar{
+    padding: 16px 24px;
+    background-color: variaveis.$textColor;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+    &__infos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+        
+
+        &__item {
+            font-size: 14px;
+            color: variaveis.$secondaryTextColor;
+
+            b {
+                font-size: 18px;
+                display: block;
+                color: variaveis.$secondaryTextColor;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+                
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__infos {
+            gap: 16px;
+        }
+    }
+}

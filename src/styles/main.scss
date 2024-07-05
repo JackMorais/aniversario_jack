@@ -1,0 +1,22 @@
+@use 'hero';
+@use 'variaveis';
+@use 'infos_bar';
+@use 'button';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    color: #000;
+    
+    
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
